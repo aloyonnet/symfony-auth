@@ -43,8 +43,9 @@
 		 */
 		private function loadUsers(ObjectManager $manager): void
 		{
-			foreach ($this->getUserData() as [$firstname, $lastname, $password, $email, $roles]) {
+			foreach ($this->getUserData() as [$username, $firstname, $lastname, $password, $email, $roles]) {
 				$user = new User();
+				$user->setUsername($username);
 				$user->setFirstName($firstname);
 				$user->setLastName($lastname);
 				$user->setEmail($email);
@@ -65,8 +66,8 @@
 		{
 			return [
 				// [$firstname, $lastname, $password, $email, $role];
-				['Normal', 'User', 'test', 'user@user.com', ['ROLE_USER']],
-				['Admin', 'User', 'test', 'admin@admin.com', ['ROLE_ADMIN']],
+				['admin_user', 'Normal', 'User', 'test', 'user@user.com', ['ROLE_USER']],
+				['normal_user', 'Admin', 'User', 'test', 'admin@admin.com', ['ROLE_ADMIN']],
 			];
 		}
 		
