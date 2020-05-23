@@ -7,7 +7,13 @@
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
-
+    {% if app.user %}
+        <div class="jumbotron text-center">
+            <h1 class="display-4">you are a user !</h1>
+            <p class="lead">Your email is {{ app.user.email }}</p>
+            <p><a class="btn btn-lg btn-primary" href="{{ path('app_logout') }}">Logout</a></p>
+        </div>
+    {% endif %}
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! ✅</h1>
 
