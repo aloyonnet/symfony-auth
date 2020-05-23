@@ -10,7 +10,7 @@
     {% if app.user %}
         <div class="jumbotron text-center">
             <h1 class="display-4">you are a user !</h1>
-            <p class="lead">Your email is {{ app.user.email }}</p>
+            <p class="lead">Hello {{ app.user.firstname }} {{ app.user.lastname }}, your email is {{ app.user.email }}</p>
             <p><a class="btn btn-lg btn-primary" href="{{ path('app_logout') }}">Logout</a></p>
         </div>
     {% endif %}
