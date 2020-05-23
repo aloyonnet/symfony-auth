@@ -54,5 +54,10 @@ $ symfony serve
 If symfony binary is not installed, you can replace the command with: 
 `php -S localhost:8000 -t public/`
 
+Data fixtures :
+```bash
+$ php bin/console doctrine:fixtures:load
+```
+
 
 [1]: https://symfony.com/doc/current/reference/requirements.html
