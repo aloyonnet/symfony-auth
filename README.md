@@ -6,6 +6,7 @@ It cover some different things :
   * Authentication
   * Registration
   * Logout
+  * Remember me
 
 Needs (what I used)
 ------------
