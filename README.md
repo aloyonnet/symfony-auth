@@ -7,6 +7,7 @@ It cover some different things :
   * Registration
   * Logout
   * Remember me
+  * Administration (to use roles and access restrictions)
 
 Needs (what I used)
 ------------
