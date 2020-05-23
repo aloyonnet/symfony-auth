@@ -1,7 +1,7 @@
 symfony5 auth
 ========================
 
-This project is a simple website wich use symfony elements to make a user system.
+This project is a simple website which use symfony elements to make a user system.
 It cover some different things :
   * Authentication
   * Registration
