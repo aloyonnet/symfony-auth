@@ -1,4 +1,4 @@
-symfony5 auth
+symfony auth
 ========================
 
 This project is a simple website which use symfony elements to make a user system.
@@ -21,7 +21,7 @@ Installation
 Get the project from github:
 
 ```bash
-$ git clone https://github.com/aloyonnet/symfony5-auth.git
+$ git clone https://github.com/aloyonnet/symfony-auth.git
 ```
 
 Install the dependencies:
