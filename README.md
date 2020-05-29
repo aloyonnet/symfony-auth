@@ -47,7 +47,7 @@ Use
 for non production use, you can launch a server (with <https://localhost:8000> by default) using :
 
 ```bash
-$ cd my_projet/public/
+$ cd my_project/public/
 $ symfony serve
 ```
 
