@@ -66,8 +66,8 @@
 		{
 			return [
 				// [$firstname, $lastname, $password, $email, $role];
-				['admin_user', 'Normal', 'User', 'test', 'user@user.com', ['ROLE_USER']],
-				['normal_user', 'Admin', 'User', 'test', 'admin@admin.com', ['ROLE_ADMIN']],
+				['normal_user', 'Normal', 'User', 'test', 'user@user.com', ['ROLE_USER']],
+				['admin_user', 'Admin', 'User', 'test', 'admin@admin.com', ['ROLE_ADMIN']],
 			];
 		}
 		
