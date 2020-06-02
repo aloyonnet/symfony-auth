@@ -31,6 +31,7 @@ $ composer install
 ```
 
 link your app to a database:
+copy .env.example and rename the file to .env
 ```bash
 /.env
 $ DATABASE_URL=...
