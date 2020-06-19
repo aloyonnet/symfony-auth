@@ -24,17 +24,17 @@ Get the project from github:
 $ git clone https://github.com/aloyonnet/symfony-auth.git
 ```
 
-Install the dependencies:
-
-```bash
-$ composer install
-```
-
 link your app to a database:
 copy .env.example and rename the file to .env
 ```bash
 /.env
 $ DATABASE_URL=...
+```
+
+Install the dependencies:
+
+```bash
+$ composer install
 ```
 
 create the content of the database:
