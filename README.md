@@ -15,50 +15,60 @@ Needs (what I used)
   * PHP 7.2.5 or more;
   * more on [needs of symfony][1].
 
-Installation
+Install
 ------------
 
-Get the project from github:
+Clone the project :
 
 ```bash
 $ git clone https://github.com/aloyonnet/symfony-auth.git
 ```
 
-link your app to a database:
-copy .env.example and rename the file to .env
+Create the .env file:
+
 ```bash
-/.env
-$ DATABASE_URL=...
+$ cp .env.example .env
 ```
 
-Install the dependencies:
+Then, install the dependencies:
 
 ```bash
 $ composer install
 ```
 
-create the content of the database:
+Create the link with the database:
 ```bash
+/.env
+$ APP_ENV=dev
+$ DATABASE_URL=...
+```
+
+We will now create the database and all the columns :
+```bash
+//create the database
+$ php bin/console doctrine:database:create
+//generate the migration
 $ php bin/console make:migration
-$ php bin/console doctrine:migrations:migrate 
+//execute the migration
+$ php bin/console doctrine:migrations:migrate
 ```
 
-Use
------
-for non production use, you can launch a server (with <https://localhost:8000> by default) using :
-
-```bash
-$ cd my_project/public/
-$ symfony serve
-```
-
-If symfony binary is not installed, you can replace the command with: 
-`php -S localhost:8000 -t public/`
-
-Data fixtures :
+For the default users, you will need to execute the fixtures :
 ```bash
 $ php bin/console doctrine:fixtures:load
 ```
 
+Use
+-----
+
+for non production use, you can launch a server (with <https://localhost:8000> by default) using :
+
+```bash
+$ cd projet/
+$ symfony serve
+```
+
+If symfony binary is not installed, you can replace the command with:
+`php -S localhost:8000 -t public/`
 
 [1]: https://symfony.com/doc/current/reference/requirements.html
