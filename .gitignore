@@ -18,3 +18,8 @@
 
 ### phpstorm ###
 .idea
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
