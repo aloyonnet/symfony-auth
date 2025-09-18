@@ -26,7 +26,7 @@ $ git clone https://github.com/aloyonnet/symfony-auth.git
 Create the .env file:
 
 ```bash
-$ cp .env.template .env
+$ cp .env-template .env
 ```
 
 Then, install the dependencies:
